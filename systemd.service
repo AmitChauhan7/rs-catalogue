@@ -3,6 +3,7 @@ Description = Catalogue Service
 [Service]
 User=roboshop
 ExecStart=/bin/node /home/roboshop/catalogue/server.js
+SyslogIdentifier=catalogue
 
 [Install]
 WantedBy=multi-user.target
