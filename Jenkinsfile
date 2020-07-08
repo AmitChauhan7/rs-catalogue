@@ -15,6 +15,15 @@ pipeline {
       }
     }
 
+    stage('Lint Check') {
+      steps {
+        sh '''
+          npm install --save jslint
+          node_modules/.bin/jslint --edition=latest "*.js" || true
+        '''
+      }
+    }
+
   }
 
 }
