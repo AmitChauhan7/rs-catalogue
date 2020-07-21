@@ -9,8 +9,7 @@ trigger:
 variables:
   appName: "catalogue"
 
-pool:
-  vmImage: 'ubuntu-latest'
+pool: 'AWS'
 
 steps:
 - task: NodeTool@0
