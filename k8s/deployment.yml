@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-BUILDNO
+  name: catalogue-BUILDNO
   labels:
     app: roboshop
-    tier: frontend
+    tier: catalogue
     build: "BUILDNO"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend
+      tier: catalogue
       build: "BUILDNO"
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: catalogue
         build: "BUILDNO"
     spec:
       containers:
-        - name: frontend
-          image: rkalluru/b48-frontend:BUILDNO
+        - name: catalogue
+          image: rkalluru/b48-catalogue:BUILDNO
           ports:
             - containerPort: 80
