@@ -22,4 +22,4 @@ spec:
         - name: catalogue
           image: rkalluru/b48-catalogue:BUILDNO
           ports:
-            - containerPort: 80
+            - containerPort: 7002
