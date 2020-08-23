@@ -23,3 +23,6 @@ spec:
           image: rkalluru/b48-catalogue:BUILDNO
           ports:
             - containerPort: 7002
+          env:
+            - name: MONGO_URL
+              value: 'mongodb://mongo:27017/catalogue'
